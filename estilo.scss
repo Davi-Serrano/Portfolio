@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+//header
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid red;
+    height: 40px;
+}
+
+.Hleft, .Hrigth{
+    display: flex;
+}
+
+header h3{
+    padding-left: 50px;
+}
+
+
+//Nav
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+//Section
+section{
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+
+}
+
+.Sleft, .Srigth{
+    height: 90vh;
+    padding-top: 50px;
+    border: 1px solid red;
+
+}
+
+
+//Port
+
+.port{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid red;
+
+}
+.project{
+    margin-top: 25px;
+    border: 1px solid red;
+}
+
+//footer
+
+footer{
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    padding: 50px;
+}
+footer h2{
+    border: 1px solid red;
+
+}

@@ -16,8 +16,7 @@ header {
     background: linear-gradient(to bottom, rgb(12, 12, 12), rgb(37, 37, 37) 70%, rgb(49, 49, 49) 85%);
 }
 
-.Hleft,
-.Hrigth {
+.Hleft, .Hrigth {
     display: flex;
 }
 
@@ -46,7 +45,7 @@ header a {
 
         transition: .5s ease;
 
-        background: blue;
+        background: rgb(35, 35, 167);
     }
 
     &:hover {
@@ -63,7 +62,38 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 85vh;
+    
+    height: 90vh;
+
+    
+    background: url(https://i.pinimg.com/originals/2d/66/85/2d6685e707bfc754c8da1bb5e4f79475.jpg);
+    color: white;
+
+    .h1{
+        max-width: 700px;
+        
+        text-align: justify;
+        font-weight: 700;
+        font-size: 55px;
+    }
+}
+
+//Animation Nav
+
+.h1::after{
+    content: "|";
+    margin-left: 5px;
+    opacity: 1;
+    animation: piscar .9s infinite;
+}
+
+@keyframes piscar {
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
 }
 
 //Section
@@ -76,12 +106,11 @@ section {
 
 .Sleft,
 .Srigth {
-    height: 90vh;
+    height: 97vh;
     padding-top: 50px;
     border: 1px solid red;
 
 }
-
 
 //Port
 

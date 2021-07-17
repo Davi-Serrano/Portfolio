@@ -1,4 +1,4 @@
-const nome = document.querySelector("h1")
+const nome = document.querySelector(".h1")
        
 typeWriter(nome)
 
@@ -9,7 +9,7 @@ function typeWriter(elemento){
 
     texto.forEach((letra, i) =>{
 
-        setTimeout( () => elemento.innerHTML += letra , 100 * i)
+        setTimeout( () => elemento.innerHTML += letra , 79 * i)
  
     })
 

@@ -20,8 +20,7 @@ header {
   background: linear-gradient(to bottom, #0c0c0c, #252525 70%, #313131 85%);
 }
 
-.Hleft,
-.Hrigth {
+.Hleft, .Hrigth {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,7 +48,7 @@ header a {
   height: 2px;
   -webkit-transition: .5s ease;
   transition: .5s ease;
-  background: blue;
+  background: #2323a7;
 }
 
 .link:hover {
@@ -70,7 +69,42 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 85vh;
+  height: 90vh;
+  background: url(https://i.pinimg.com/originals/2d/66/85/2d6685e707bfc754c8da1bb5e4f79475.jpg);
+  color: white;
+}
+
+nav .h1 {
+  max-width: 700px;
+  text-align: justify;
+  font-weight: 700;
+  font-size: 55px;
+}
+
+.h1::after {
+  content: "|";
+  margin-left: 5px;
+  opacity: 1;
+  -webkit-animation: piscar .9s infinite;
+          animation: piscar .9s infinite;
+}
+
+@-webkit-keyframes piscar {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes piscar {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 section {
@@ -85,7 +119,7 @@ section {
 
 .Sleft,
 .Srigth {
-  height: 90vh;
+  height: 97vh;
   padding-top: 50px;
   border: 1px solid red;
 }

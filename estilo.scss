@@ -100,8 +100,21 @@ nav {
 section {
     display: flex;
     justify-content: center;
+    background: linear-gradient(225deg, #144f5c , #000000,  #144f5c , #000000);
+    background-size: 300% 300%;
+    animation: mudaCor 15s ease infinite;
 }
+//Animation Bd 
+@keyframes mudaCor {
+    0%, 100%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
 
+
+}
 .Sleft,
 .Srigth {
     height: 97vh;
@@ -130,6 +143,7 @@ section {
             padding: 16px 24px;
 
             position: relative;
+            z-index: 0;
 
             color: white;
             cursor: pointer;
@@ -146,7 +160,7 @@ section {
                 
                 top:0;
                 left: 0;
-                z-index: -1;
+                z-index: -6;
                 
                 transform: translate(0%, -25%) rotate(45deg);
                 transition: .5s ease;

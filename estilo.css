@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Oxygen', sans-serif;
 }
 
 header {
@@ -14,18 +15,49 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid red;
-  height: 40px;
+  height: 70px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0c0c0c), color-stop(70%, #252525), color-stop(85%, #313131));
+  background: linear-gradient(to bottom, #0c0c0c, #252525 70%, #313131 85%);
 }
 
-.Hleft, .Hrigth {
+.Hleft,
+.Hrigth {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header h3 {
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.link {
   padding-left: 50px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 208;
+  width: 0%;
+  height: 2px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background: blue;
+}
+
+.link:hover {
+  opacity: .8;
+}
+
+.link:hover::after {
+  width: 80%;
 }
 
 nav {
@@ -38,7 +70,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 90vh;
+  height: 85vh;
 }
 
 section {
@@ -51,7 +83,8 @@ section {
   border: 1px solid red;
 }
 
-.Sleft, .Srigth {
+.Sleft,
+.Srigth {
   height: 90vh;
   padding-top: 50px;
   border: 1px solid red;

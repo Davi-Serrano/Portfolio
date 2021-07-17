@@ -1,46 +1,81 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
 }
 
 
 
 //header
-header{
+header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid red;
-    height: 40px;
+    height: 70px;
+    background: linear-gradient(to bottom, rgb(12, 12, 12), rgb(37, 37, 37) 70%, rgb(49, 49, 49) 85%);
 }
 
-.Hleft, .Hrigth{
+.Hleft,
+.Hrigth {
     display: flex;
 }
 
-header h3{
-    padding-left: 50px;
+header a {
+    color: white;
+    text-decoration: none;
 }
 
+.link {
+    padding-left: 50px;
+    
+    transition: .5s ease;
+    
+    position: relative;
+
+    &::after{
+        content: "";
+        display: block;
+
+        position: absolute;
+        top: 100%;
+        left: 208;
+
+        width: 0%;
+        height: 2px;
+
+        transition: .5s ease;
+
+        background: blue;
+    }
+
+    &:hover {
+        opacity: .8;
+
+        &::after{
+            width: 80%;
+        }
+    }
+}
 
 //Nav
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 85vh;
 }
 
 //Section
-section{
+section {
     display: flex;
     justify-content: center;
     border: 1px solid red;
 
 }
 
-.Sleft, .Srigth{
+.Sleft,
+.Srigth {
     height: 90vh;
     padding-top: 50px;
     border: 1px solid red;
@@ -50,27 +85,29 @@ section{
 
 //Port
 
-.port{
+.port {
     display: flex;
     align-items: center;
     flex-direction: column;
     border: 1px solid red;
 
 }
-.project{
+
+.project {
     margin-top: 25px;
     border: 1px solid red;
 }
 
 //footer
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     border: 1px solid red;
     padding: 50px;
 }
-footer h2{
+
+footer h2 {
     border: 1px solid red;
 
 }

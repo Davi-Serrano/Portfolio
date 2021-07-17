@@ -100,16 +100,73 @@ nav {
 section {
     display: flex;
     justify-content: center;
-    border: 1px solid red;
-
 }
 
 .Sleft,
 .Srigth {
     height: 97vh;
-    padding-top: 50px;
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.Sleft{
+        
+    .stacks{
+       font-size: 45px;
+
+        background: linear-gradient(225deg, #1c687a 20%, #538BF0 80%);
+       
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .works{
+       
+            display: inline-block;
+            margin-top: 64px;
+            font-size: 24px;
+            padding: 16px 24px;
+
+            position: relative;
+
+            color: white;
+            cursor: pointer;
+            
+
+            &::after{
+                content: "";
+                display: block;
+
+                width: 120px;
+                height: 120px;
+                
+                position: absolute;
+                
+                top:0;
+                left: 0;
+                z-index: -1;
+                
+                transform: translate(0%, -25%) rotate(45deg);
+                transition: .5s ease;
+                
+               
+                background: linear-gradient(225deg, #1c687a 20%, #538BF0 80%);
+            }
+
+            &:hover{
+                &::after{
+                    transform: translate(0%, -25%) rotate(180deg);
+                }
+    }
+
+    }
+}
+
+
+.Srigth{
+    margin-left: 20px;
 }
 
 //Port

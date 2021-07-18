@@ -247,7 +247,7 @@ section {
 }
 
 .project .tpM {
-  top: -900%;
+  top: -300%;
 }
 
 .project a {
@@ -260,18 +260,56 @@ section {
           transform: translate(20%, -20%) translate3d(0, 0, 0);
 }
 
+.project:last-child {
+  padding-bottom: 50px;
+}
+
 footer {
+  border-top: 1px solid white;
+  padding-top: 50px;
+  background: black;
+}
+
+footer .contact {
+  padding-left: 150px;
+  font-size: 45px;
+  font-weight: 700;
+  color: white;
+}
+
+footer .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 1px solid red;
-  padding: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px 0;
 }
 
-footer h2 {
-  border: 1px solid red;
+footer a {
+  text-decoration: none;
+}
+
+footer .box {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .box:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+footer .box:first-child {
+  margin-left: -100px;
+}
+
+footer .box:last-child {
+  margin-right: 50px;
 }
 /*# sourceMappingURL=estilo.css.map */

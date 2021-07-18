@@ -125,9 +125,13 @@ section {
 }
 
 .Sleft{
-        
+        h2{
+            color: white;
+            font-size: 35px;
+        }
     .stacks{
-       font-size: 45px;
+        
+        font-size: 25px;
 
         background: linear-gradient(225deg, #1c687a 20%, #538BF0 80%);
        
@@ -187,15 +191,23 @@ section {
 
 .port {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    border: 1px solid red;
+    align-items: flex-start;
+    
+    padding-left: 350px;
 
+    background: linear-gradient(to bottom, #144f5c , #000000);
 }
 
 .project {
-    margin-top: 25px;
-    border: 1px solid red;
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 35px;
+    
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }
 
 //footer

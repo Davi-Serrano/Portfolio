@@ -156,8 +156,13 @@ section {
           align-items: center;
 }
 
+.Sleft h2 {
+  color: white;
+  font-size: 35px;
+}
+
 .Sleft .stacks {
-  font-size: 45px;
+  font-size: 25px;
   background: linear-gradient(225deg, #1c687a 20%, #538BF0 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -203,19 +208,27 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid red;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 350px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#144f5c), to(#000000));
+  background: linear-gradient(to bottom, #144f5c, #000000);
 }
 
 .project {
-  margin-top: 25px;
-  border: 1px solid red;
+  margin-top: 35px;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.project a {
+  text-decoration: none;
+  color: white;
 }
 
 footer {

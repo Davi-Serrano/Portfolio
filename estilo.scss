@@ -4,7 +4,12 @@
     box-sizing: border-box;
     font-family: 'Oxygen', sans-serif;
 }
-
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
 
 
 //header
@@ -193,21 +198,41 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
-    padding-left: 350px;
+    padding-left: 250px;
 
     background: linear-gradient(to bottom, #144f5c , #000000);
+
 }
 
 .project {
     margin-top: 35px;
+    
     font-weight: 700;
     font-size: 35px;
     
+    position: relative;
+    img{
+        width: 800px;
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        
+        transform: translate(20%, -20%) translate3d(1000px, 0, 0);
+        transition: 1s ease;
+    }
     a{
+    
         text-decoration: none;
         color: white;
+    
+        &:hover{
+           & + img{
+            transform: translate(20%, -20%) translate3d(0, 0, 0);
+           }
+        }
     }
+
 }
 
 //footer

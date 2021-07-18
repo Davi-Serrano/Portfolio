@@ -246,6 +246,10 @@ section {
   transition: 1s ease;
 }
 
+.project .tpM {
+  top: -900%;
+}
+
 .project a {
   text-decoration: none;
   color: white;

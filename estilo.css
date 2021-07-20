@@ -312,4 +312,51 @@ footer .box:first-child {
 footer .box:last-child {
   margin-right: 50px;
 }
+
+@media (max-width: 1200px) {
+  .project img {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .Srigth {
+    display: none;
+  }
+  .icons {
+    margin-left: 350px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (max-width: 414px) {
+  header {
+    display: none;
+  }
+  nav .h1 {
+    font-size: 55px;
+    padding: 0 40px;
+  }
+  .port {
+    padding-left: 20px;
+  }
+  .contact {
+    margin-left: -150px;
+  }
+  .icons {
+    margin-left: 150px;
+  }
+}
 /*# sourceMappingURL=estilo.css.map */

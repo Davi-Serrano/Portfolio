@@ -14,6 +14,14 @@ body {
   overflow-x: hidden;
 }
 
+.headerMobile {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,6 +40,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.Hrigth {
+  margin-right: 20%;
 }
 
 header a {
@@ -341,9 +353,31 @@ footer .box:last-child {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 650px) {
   header {
     display: none;
+  }
+  .headerMobile {
+    display: block;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0c0c0c), color-stop(70%, #252525), color-stop(85%, #313131));
+    background: linear-gradient(to bottom, #0c0c0c, #252525 70%, #313131 85%);
+  }
+  .headerMobile a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+  }
+  .headerMobile .BtnMenu {
+    padding-left: 4px;
+  }
+  .hide {
+    display: none;
+  }
+  .Menu {
+    text-align: center;
+    line-height: 10vh;
+    font-size: 35px;
+    height: 100vh;
   }
   nav .h1 {
     font-size: 55px;

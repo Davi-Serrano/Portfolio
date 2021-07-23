@@ -11,6 +11,13 @@ body{
     overflow-x: hidden;
 }
 
+//header mobile
+.headerMobile{
+    display: none;
+}
+.hidden{
+    display: none;
+}
 
 //header
 header {
@@ -23,6 +30,9 @@ header {
 
 .Hleft, .Hrigth {
     display: flex;
+}
+.Hrigth{
+    margin-right: 20%;
 }
 
 header a {
@@ -301,9 +311,32 @@ footer {
         align-items: flex-start;
     }
 }
-@media (max-width: 414px){
+@media (max-width: 650px){
     header{
         display: none;
+    }
+    .headerMobile{
+        display: block;
+        background: linear-gradient(to bottom, rgb(12, 12, 12), rgb(37, 37, 37) 70%, rgb(49, 49, 49) 85%);
+    a{
+        text-decoration: none;
+        color: white;
+        padding: 20px ;
+
+    }
+    .BtnMenu{
+        padding-left: 4px;
+    }
+}
+    .hide{
+        display: none;
+    }
+    .Menu{
+        text-align: center;
+        line-height: 10vh;
+        font-size: 35px;
+        height: 100vh;
+        
     }
     nav .h1{
         font-size: 55px;
